@@ -21,14 +21,7 @@
                 echo $_GET['error'];
                 ?>
             </p>
-
         <?php } ?>
-
-
-
-
-
-
 
 
 
@@ -40,7 +33,16 @@
         <input type="password" name="password" placeholder="Nhập password" />
 
         <button type="submit">Login</button>
+        <button id="register" type="button">Register</button>
+
     </form>
+
+
+    <script>
+        document.getElementById("register").addEventListener("click", () => {
+            document.location = 'view/register.php';
+        })
+    </script>
 
 </body>
 

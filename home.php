@@ -2,8 +2,8 @@
 session_start();
 
 if (isset($_SESSION['user_name'])) {
-
-?>
+    setcookie("user_name", $_SESSION['user_name'], time() + (86400 * 30), "/"); // 86400 = 1 day
+    ?>
     <!DOCTYPE html>
     <html>
 
